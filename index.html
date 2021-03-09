@@ -1,0 +1,74 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="survey">
+        <div class="gnt">
+            <div class="title-back">
+            <h1 id="title">Georgian National Football Team Survey Form </h1>
+            <p id="description">Thank you for participating in our survey </p>
+            </div>
+            <form id="survey-form">
+                <div class="form-box"> <label id="name-label" for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required></div>
+                <div class="form-box"> <label id="email-label" for="email">Email</label>
+                    <input type="email" id="email" name="fname" placeholder="Enter your email" required></div>
+                <div class="form-box"> <label id="number-label" for="age">Age</label>
+                    <input type="number" id="number" name="age" min="12" max="100" placeholder="Enter your Age"></div>
+                <div class="form-box">
+                    <label for="coach">Choose the coach you think is best </label>
+                    <select name="coach" id="dropdown">
+                    <option disabled="" selected="" value="">Select your choise</option>
+                    <option value="Temur-Ketsbaia">Temur Ketsbaia</option>
+                    <option value="Aleksandre-Chivadze">Aleksandre Chivadze</option>
+                    <option value="Kakha-Tskhadadze">Kakha Tsgadadze</option>
+                    <option value="Vladimir-Weiss">Vladimir-Weiss</option>
+                    </select>
+                </div>
+                <p id="question">Will the Georgian team participate in the World Cup?</p>
+                <div class="question-div">
+                    <input type="radio" id="yes" name="question" value="yes" checked>
+                    <label id="radio" for="yes">Yes</label>
+                    <input type="radio" id="no" name="question" value="no">
+                    <label id="radio" for="no">No</label>
+                </div>
+                <div class="choose">
+                    <p>Choose the best 3 players (Check all that apply)</p>
+                    <input type="checkbox" id="footballer1" name="footballer1" value="giorgi loria">
+                    <label id="check" for="giorgi loria">Giorgi Loria</label><br>
+                    <input type="checkbox" id="footballer2" name="footballer2" value="Tornike Okriashvili">
+                    <label id="check" for="giorgi loria">Tornike Okriashvili</label><br>
+                    <input type="checkbox" id="footballer3" name="footballer3" value="Guram Kashia">
+                    <label id="check" for="giorgi loria">Guram Kashia</label><br>
+                    <input type="checkbox" id="footballer4" name="footballer4" value="Giorgi Chakvetadze">
+                    <label id="check" for="giorgi loria">Giorgi Chakvetadze</label><br>
+                    <input type="checkbox" id="footballer5" name="footballer5" value="Khvicha Kvaratskhelia">
+                    <label id="check" for="giorgi loria">Khvicha Kvaratskhelia</label><br>
+                    <input type="checkbox" id="footballer6" name="footballer6" value="Vako Khazaishvili">
+                    <label id="check" for="giorgi loria">Vako Khazaishvili</label><br>
+                    <input type="checkbox" id="footballer7" name="footballer7" value="Giorgi Kvilitaia">
+                    <label id="check" for="giorgi loria">Giorgi Kvilitaia</label><br>
+                    <input type="checkbox" id="footballer8" name="footballer8" value="Jaba Kankava">
+                    <label id="check" for="giorgi loria">Jaba Kankava</label><br>
+                <div class="comments">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comment"  name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="sub">
+                    <input id="submit" class="button" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+            
+        
+    </section>
+</body>
+</html>
